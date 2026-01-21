@@ -12,6 +12,30 @@ header{
   padding-top: 30px;
   color: white;
 }
+.logo h2{
+    font-size: 32px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+.Wave{
+    color: lightcoral;
+}
+.headimg{
+   padding-top: 20px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+    padding-top: 20px;
+}
+ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
 .headsix{
     padding-top: 8px;
     padding-bottom: 24px;
@@ -33,25 +57,8 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-ul{
-    display: flex;
-    list-style-type: none;
-    gap: 32px;
-    list-style: none;
-    align-items: center;
-}
-ul li a{
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-}
-.logo h2{
-    font-size: 32px;
-    font-weight: 500;
-}
-.Wave{
-    color: lightcoral;
-}
+
+
 .button{
     margin-top: 10px;
     height: 50px;
@@ -219,55 +226,70 @@ ul li a{
     color: white;
     background: none;
 }
-.container>*{
-    display: grid;
-    margin-left: 200px;
-    margin-right: 200px;
-    gap: 30px;
-    border-radius: 4%;
-    background-color:#351165 ;
-    padding-top: 112.5px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .thirdsection{
+
+.thirdsection{
     background-color: #230E3D;
     color: white;
     padding-bottom: 140px ;
     margin: 0 auto;
+    width: 1600px;
+    height: 1121px;
 
   }
-  .thirdsection h1{
+.thirdsection h1{
     padding-top: 120px;
     padding-bottom: 40px;
+    color: white;
   }
-.one{
-   grid-area: column;
-
-  }
-.two{grid-area: column;
-    ;
-}
-.three{grid-area: row;
-  
-}
-.four{ grid-area:row ;
-    
-}
-.five{ grid-area: column;
-    
-  
-}
 .container{
     display: grid;
-    gap:20px;
-    background-size: cover; 
-    grid-template-areas:
-        "one two two two"
-        "one three three three "
-        "four four  four five";
+    gap: 30px;
+    max-width: 1200px;
+    min-height: 783px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    margin-top: 40px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,150px);
+  }  
+.container .one{ 
+   border-radius: 4%;
+   background-color: #351165;
+   grid-row: 1/span 2 ;
+   
+  }
+  .one h6{ padding-bottom: 107.5px;
+
+  }
+.container .two{border-radius: 4%;
+    background-color: #351165;
+    grid-column: 2/span2;
+   
+    
     
 }
+.container .three{border-radius: 4%;
+    background-color: #351165;
+    grid-column: 2/span2;
+    
+  
+}
+.container .four{border-radius: 4%;
+    background-color: #351165;
+    grid-column: 1/span2;
+    grid-row: 3/span0;
+    
+    
+}
+.container .five{ border-radius: 4%;
+    background-color: #351165;
+    grid-column: 3/span0;
+    grid-row: 3/span0;
+    
+    
+  
+}
+
 p{
     color: green;
 }
