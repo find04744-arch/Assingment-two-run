@@ -1,6 +1,7 @@
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;}
+
 body{
     background-color: #412567;
 }
@@ -185,18 +186,19 @@ ul li a{
 .middlebutton{
     display: flex;
     padding-bottom: 101px;
-   gap: 2.4px;
+   gap: 3px;
    justify-content: center;
 }
 .middlebutton button{
     padding: 12.5px 20px 12.5px 48px;
-    border-radius: 8px;
+    border-radius: 60px;
     align-items: center;
     text-align: center;
     justify-content: center;
     background-color: pink;
     color: white;
 }
+
 #cls{
     background-color: transparent;
 }
@@ -286,8 +288,8 @@ p{
 }
 .skill-box{
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 1200px;
+    height: 464px;
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
@@ -297,11 +299,15 @@ p{
     padding-bottom:144px ;
     border-radius: 4%;
     width: 380px;
+    height: 440px;
+    overflow: hidden;
     background-color: #250D44;
 }
 .second {padding-bottom:144px ;
     border-radius: 4%;
     width: 380px;
+    height: 440px;
+    overflow: hidden;
     background-color: #250D44;
 }
 
@@ -309,14 +315,58 @@ p{
     padding-bottom:144px ;
     border-radius: 4%;
     width: 380px;
+    height: 440px;
+    overflow: hidden;
     background-color: #250D44;
 }
 .pop{
     height:auto;
     width: 100%;
-   
-   
+   }
+.first h2{
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+}  
+.first h6{
+    padding-left: 24px;
+    padding-bottom: 12px;
+} 
+.first p{
+    padding-left: 50px;
+    padding-bottom: 24px;
 }
+.second h2{
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+}
+.second h6{
+    padding-left: 24px;
+    padding-bottom: 12px;
+} 
+.second p{
+    padding-left: 50px;
+    padding-bottom: 24px;
+}
+.third h2{
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+}
+.third h6{
+    padding-left: 24px;
+    padding-bottom: 12px;
+} 
+.third p{
+    padding-left: 50px;
+    padding-bottom: 24px;
+}
+
+
 
 
 .Meet{
