@@ -11,16 +11,19 @@ header{
     box-sizing: border-box;
   padding-top: 30px;
   color: white;
+  overflow: hidden;
 }
 .logo h2{
     font-size: 32px;
     font-weight: 500;
     padding-top: 20px;
+    padding-left: 1px;
 }
 .logo .Wave {color: pink;
 }
 .headimg{
-   padding-top: 20px;
+   padding-top: 30px;
+   padding-right: 2px;
 }
 ul{
     display: flex;
@@ -219,7 +222,7 @@ nav{
     display: flex;
     align-items: center;
     text-align: center;
-    padding-left: 34%;
+   padding-left: 33%;
     gap: 80px;
     padding-bottom: 120px;
    
@@ -243,6 +246,7 @@ nav{
     margin: 0 auto;
     width: 1600px;
     height: 1121px;
+    flex-wrap: wrap;
 
   }
 .thirdsection h1{
@@ -256,6 +260,7 @@ nav{
     margin: 0 auto;
     margin-bottom: 120px;
     margin-top: 40px;
+  
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,150px);
   }  
@@ -473,4 +478,97 @@ p{
 .copy{
     align-items: center;
     padding-top: 34.5px;
+}
+@media screen and (max-width: 390px) {
+    
+    nav, .container, .skill-box, .alax, .last {
+        width: 95% ;
+        max-width: 100%;
+        margin: 0 auto;
+    }  
+    .ul, .button {
+        display: none; 
+    }
+    .headimg {
+        display: block; 
+    }
+    .imgsection {
+        background-size: contain;
+        height: 300px;
+    }
+    .imgsection img {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+    }
+    .imgsection button {
+        left: 60%;
+        top: 20%;
+    }
+    .middlebutton {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .middlebutton button {
+        width: 80%;
+    }
+    .diverabba {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 0;
+        gap: 20px;
+        margin-bottom: 60px;
+    } 
+    .thirdsection {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+    }
+    .container > div {
+        grid-column: auto ;
+        grid-row: auto ;
+        padding: 40px 20px;
+    }
+    .skill-box {
+        flex-direction: column;
+        height: auto;
+    }
+    .first, .second, .third {
+        width: 100%;
+        height: auto;
+    }
+    iframe {
+        width: 100% ;
+        height: 200px;
+    }
+
+    
+    .alax {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+    .alax img {
+        margin: 0 auto;
+        width: 150px;
+    }
+    .alaxbaba {
+        padding-top: 20px;
+    }
+
+    
+    .last {
+        padding: 60px 20px;
+    }
+    .logo .list {
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
